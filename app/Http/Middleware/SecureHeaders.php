@@ -26,8 +26,8 @@ class SecureHeaders
         $response->headers->set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload');
 
         // Content Security Policy (adjust based on needs)
-        $csp = "default-src 'self'; script-src 'self' ; object-src 'none';";
-        $response->headers->set('Content-Security-Policy', $csp);
+     //   $csp = "default-src 'self'; script-src 'self' ; object-src 'none';";
+    //    $response->headers->set('Content-Security-Policy', $csp);
 
         return $next($request);
     }
